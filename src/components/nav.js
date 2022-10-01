@@ -14,10 +14,12 @@ export default function NavIconLabelTabs() {
   };
 
   return (
-    <Tabs value={value} onChange={handleChange} aria-label="navigation icon label tabs">
-      <Tab icon={<HomeIcon />} label="HOME" />
-      <Tab icon={<GroupIcon />} label="EMPLOYEES" />
-      <Tab icon={<GroupAddIcon />} label="ONBOARDING" />
-    </Tabs>
+    <nav>
+      <Tabs value={value} onChange={handleChange} aria-label="navigation icon label tabs">
+        <Tab icon={<HomeIcon />} label="HOME" />
+        <Tab icon={<GroupIcon />} label="EMPLOYEES" />
+        <Tab icon={<GroupAddIcon />} label="ONBOARDING" />
+      </Tabs>
+    </nav>
   );
 }

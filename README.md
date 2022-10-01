@@ -3,6 +3,10 @@ Welcome to your new Kyndred Intranet! Keep up with exciting news, events and ann
 Looking to find that close kindred member? Or adding a new member to the family?
 Kyndred has got your back! Let's get started!
 
+API: [Random User Generator](https://randomuser.me/).
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
