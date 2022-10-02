@@ -1,8 +1,9 @@
+/* TODO: Add more breakpoints */
 @media screen and (max-width: 991px) {
   .bodySection {
     background-image: url('./images/employeesHuddle.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     height: 40vh;
     font-size: 14px;
     padding-top: 0px;
@@ -13,7 +14,7 @@
   .bodySection {
     background-image: url('./images/employeesChill.webp');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% auto;
     min-height: 70vh;
     font-size: 24px;
     padding-top: 10px;
@@ -65,4 +66,21 @@ footer {
 footer p {
   display: flex;
   justify-content: center;
+}
+
+main {
+  width: 100%;
+}
+
+.employee-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.employee-header {
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
 }
