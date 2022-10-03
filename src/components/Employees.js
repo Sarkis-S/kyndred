@@ -2,10 +2,15 @@ import $ from 'jquery';
 import React, { useState, useEffect } from 'react';
 import EmployeeCard from './EmployeeCard';
 
+// TODO: Search feature, filter (place, gender, year/month of birth)
+
+// TODO: create & apply debounce method on searches
+
 const Employees = () => {
   const [users, setUsers] = useState([]);
 
-  // Makes multiple API calls and store users to populate employee listing
+  // Makes multiple API calls to populate employee listing from return statement
+
   // TODO: make conversion to populate redux store
   useEffect(() => {
     $.ajax({
@@ -16,9 +21,7 @@ const Employees = () => {
         setUsers(employee.results);
       }
     });
-  },
-    // eslint-disable-next-line
-    []);
+  }, []);
 
   return (
     <>

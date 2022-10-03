@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import HomeIcon from '@mui/icons-material/Home';
@@ -7,11 +7,10 @@ import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import { useNavigate } from 'react-router-dom';
 
 export default function Navigation() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   const navigate = useNavigate();
   
   const handleChange = (event, newValue) => {
-    // console.log(event.target.attributes);
     let path = event.target.attributes.path.textContent;
     setValue(newValue);
     navigate(path);

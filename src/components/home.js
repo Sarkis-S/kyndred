@@ -2,7 +2,7 @@
 const Home = () => {
   return (
     <>
-      <div className='bodySection'>
+      <div className='body-section'>
         <h1>Kyndred</h1>
         <p>Where people are close to kin</p>
       </div>

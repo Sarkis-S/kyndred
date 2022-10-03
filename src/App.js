@@ -11,11 +11,14 @@ const App = () => {
     <div className='App'>
       <BrowserRouter>
         <Navigation />
+
+          {/* The body of our homepage depends on browser path or which nav icon was clicked */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/employees" element={<Employees />} />
             <Route path="/onboarding" element={<Onboarding />} />
           </Routes>
+
         <Footer />
       </BrowserRouter>
     </div>

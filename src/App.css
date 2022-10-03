@@ -1,6 +1,5 @@
-/* TODO: Add more breakpoints */
 @media screen and (max-width: 991px) {
-  .bodySection {
+  .body-section {
     background-image: url('./images/employeesHuddle.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -11,7 +10,7 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .bodySection {
+  .body-section {
     background-image: url('./images/employeesChill.webp');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -34,9 +33,30 @@ nav {
   width: 100%;
 }
 
-.bodySection {
+.body-section {
   color: rgb(28, 147, 174);
   width: 100%;
+}
+
+.employee-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.employee-header {
+  width: 100%;
+}
+
+.onboard {
+  width: 100%
+}
+.form-section {
+  background-color: white;
+  border: solid 1px gray;
+  border-radius: 5px;
+  padding: 20px;
+  width: 75%;
 }
 
 h1 {
@@ -48,10 +68,20 @@ h2 {
   justify-content: center;
 }
 
+main {
+  width: 100%;
+}
+
 section {
   padding: 5px;
   margin: 30px;
   background-color: rgb(246, 243, 243);
+}
+
+.textfield {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
 }
 
 footer {
@@ -66,21 +96,4 @@ footer {
 footer p {
   display: flex;
   justify-content: center;
-}
-
-main {
-  width: 100%;
-}
-
-.employee-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.employee-header {
-  /* display: flex;
-  justify-content: center; */
-  width: 100%;
 }
